@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} Train {% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <p class="display-4">Train: {{ train.name }}</p>
+            <p class="display-4">From: {{ train.from_city }}</p>
+            <p class="display-4">To: {{ train.to_city }}</p>
+            <p class="display-4">Time: {{ train.travel_time }} h</p>
+            <a href="{% url 'train:home' %}">
+                <button class="btn btn-light">
+                    Back to list
+                </button>
+            </a>
+        </div>
+    </div>
+{% endblock %}

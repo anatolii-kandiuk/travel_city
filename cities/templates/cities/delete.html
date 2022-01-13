@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} Delete City {% endblock %}
+
+{% block content %}
+    <h1 class="display-4 text-center my-4">Delete City</h1>
+    <div class="row mx-auto">
+        <div class="col-md-6 mx-auto">
+            <form action="" method="post">
+                {% csrf_token %}
+                <p>Delete "{{ city.name }}"?</p>
+                <input type="submit" value="Delete">
+            </form>
+        </div>
+    </div>
+{% endblock %}

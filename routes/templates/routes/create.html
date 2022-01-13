@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title%}Save Route {% endblock%}
+
+{% block content%}
+    <h1 class="display-4">Save New Route</h1>
+    <div class="row mx-auto">
+        <div class='col-md-8'>
+            <form action="" method="post"> {% csrf_token %}
+                {{form.as_p}}
+                <p>Route from {{from_city}} to {{to_city}},
+                    total time: {{travel_time}}  </p>
+                    <p>Route include: </p>
+                        {% for d in descr %}
+                            <p> {{d}} </p>
+                        {% endfor %}
+                <input type="submit" value="Save">
+                </form>
+        </div>
+    </div>
+
+
+{% endblock%}
