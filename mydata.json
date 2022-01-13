@@ -1,0 +1,279 @@
+[
+  {
+    "model": "cities.city",
+    "pk": 1,
+    "fields": {
+      "name": "Ivano-Frankivsk"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 5,
+    "fields": {
+      "name": "Avdiivka"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 6,
+    "fields": {
+      "name": "Mykolaiv"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 7,
+    "fields": {
+      "name": "Ternopil"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 8,
+    "fields": {
+      "name": "Uman"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 9,
+    "fields": {
+      "name": "Tlumach"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 11,
+    "fields": {
+      "name": "Buchach"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 12,
+    "fields": {
+      "name": "Odessa"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 13,
+    "fields": {
+      "name": "Kyiw"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 14,
+    "fields": {
+      "name": "Bila Cerkva"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 15,
+    "fields": {
+      "name": "Koropec"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 16,
+    "fields": {
+      "name": "Horodenka"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 17,
+    "fields": {
+      "name": "Verhovyna"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 18,
+    "fields": {
+      "name": "Zelene"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 19,
+    "fields": {
+      "name": "Harkiv"
+    }
+  },
+  {
+    "model": "routes.route",
+    "pk": 3,
+    "fields": {
+      "name": "Ivano-Frankivsk - Harkiv",
+      "from_city": "Ivano-Frankivsk",
+      "to_city": "Harkiv",
+      "travel_time": 19,
+      "across_cities": [
+        1,
+        7,
+        10
+      ]
+    }
+  },
+  {
+    "model": "routes.route",
+    "pk": 5,
+    "fields": {
+      "name": "Buchach - Ivano-Frankivsk",
+      "from_city": "Buchach",
+      "to_city": "Ivano-Frankivsk",
+      "travel_time": 3,
+      "across_cities": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "routes.route",
+    "pk": 6,
+    "fields": {
+      "name": "Koropec - Odessa",
+      "from_city": "Koropec",
+      "to_city": "Odessa",
+      "travel_time": 9,
+      "across_cities": [
+        12,
+        11
+      ]
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 1,
+    "fields": {
+      "name": "1",
+      "from_city": 13,
+      "to_city": 12,
+      "travel_time": 5
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 3,
+    "fields": {
+      "name": "2",
+      "from_city": 11,
+      "to_city": 1,
+      "travel_time": 3
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 4,
+    "fields": {
+      "name": "3",
+      "from_city": 12,
+      "to_city": 15,
+      "travel_time": 7
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 5,
+    "fields": {
+      "name": "4",
+      "from_city": 15,
+      "to_city": 9,
+      "travel_time": 5
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 7,
+    "fields": {
+      "name": "5",
+      "from_city": 12,
+      "to_city": 19,
+      "travel_time": 8
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 9,
+    "fields": {
+      "name": "7",
+      "from_city": 11,
+      "to_city": 9,
+      "travel_time": 1
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 10,
+    "fields": {
+      "name": "6",
+      "from_city": 1,
+      "to_city": 13,
+      "travel_time": 6
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 11,
+    "fields": {
+      "name": "9",
+      "from_city": 6,
+      "to_city": 12,
+      "travel_time": 2
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 12,
+    "fields": {
+      "name": "10",
+      "from_city": 15,
+      "to_city": 6,
+      "travel_time": 7
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 13,
+    "fields": {
+      "name": "11",
+      "from_city": 11,
+      "to_city": 15,
+      "travel_time": 1
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 14,
+    "fields": {
+      "name": "12",
+      "from_city": 6,
+      "to_city": 8,
+      "travel_time": 3
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 15,
+    "fields": {
+      "name": "13",
+      "from_city": 17,
+      "to_city": 5,
+      "travel_time": 8
+    }
+  },
+  {
+    "model": "trains.train",
+    "pk": 16,
+    "fields": {
+      "name": "14",
+      "from_city": 5,
+      "to_city": 19,
+      "travel_time": 4
+    }
+  }
+]
